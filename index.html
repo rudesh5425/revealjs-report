@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quarterly Technical Report</title>
+
+    <!-- RevealJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Slide 1 -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Prepared by: <b>24ds2000104@ds.study.iitm.ac.in</b></p>
+          <aside class="notes">Start by introducing yourself.</aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+## 📊 Financial Summary (Markdown)
+
+- Revenue Growth: **+12%**
+- Net Profit: **₹48 Crores**
+- EPS: `₹23.4`
+
+---
+
+### Key Formula (Math)
+
+\[
+EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Avg\ Shares}
+\]
+          </textarea>
+        </section>
+
+        <!-- Fragments -->
+        <section>
+          <h2>Highlights</h2>
+          <ul>
+            <li class="fragment">Increased digital transactions</li>
+            <li class="fragment fade-up">Reduced operational cost</li>
+            <li class="fragment fade-in-then-out">Quarterly growth momentum</li>
+          </ul>
+          <aside class="notes">Explain each point slowly.</aside>
+        </section>
+
+        <!-- Code with Highlight -->
+        <section>
+          <h3>Forecast Code Example</h3>
+<pre><code class="python" data-line-numbers>
+import pandas as pd
+
+df = pd.read_csv("earnings.csv")
+df['rolling_avg'] = df['revenue'].rolling(3).mean()
+
+print(df.tail())
+</code></pre>
+          <aside class="notes">Show code relevance to forecasting.</aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+
+    <script>
+      Reveal.initialize({
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
+      });
+    </script>
+  </body>
+</html>
