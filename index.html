@@ -7,6 +7,8 @@
     <!-- RevealJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/white.css">
+
+    <!-- Syntax Highlight CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
   </head>
 
@@ -18,13 +20,13 @@
         <section>
           <h1>QUARTERLY<br>EARNINGS REPORT</h1>
           <p>Prepared by: <b>24ds2000104@ds.study.iitm.ac.in</b></p>
-          <aside class="notes">Introduce yourself and the purpose of this presentation.</aside>
+          <aside class="notes">Introduce yourself and the purpose.</aside>
         </section>
 
-        <!-- Markdown Slide (EMAIL ADDED HERE ALSO) -->
+        <!-- Markdown Slide -->
         <section data-markdown>
-          <textarea data-template>
-## 📊 Financial Summary (Markdown Slide)
+<textarea data-template>
+## 📊 Financial Summary (Markdown)
 
 - Revenue Growth: **+12%**
 - Net Profit: **₹48 Crores**
@@ -39,24 +41,25 @@
 \[
 EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Avg\ Shares}
 \]
-          </textarea>
+</textarea>
         </section>
 
-        <!-- Fragment Animation -->
+        <!-- Fragment Slide -->
         <section>
-          <h2>Quarterly Highlights</h2>
+          <h2>Business Highlights</h2>
           <ul>
             <li class="fragment">Increase in digital transactions</li>
             <li class="fragment fade-up">Lower operational costs</li>
             <li class="fragment fade-in-then-out">Consistent customer growth</li>
           </ul>
-          <aside class="notes">Explain each point gradually as it appears.</aside>
+          <aside class="notes">Talk through each point slowly.</aside>
         </section>
 
-        <!-- Code Example -->
+        <!-- Syntax Highlight Code Slide -->
         <section>
           <h3>Revenue Forecast Code Example</h3>
-<pre><code class="python" data-line-numbers>
+
+<pre><code class="language-python" data-trim data-line-numbers>
 import pandas as pd
 
 df = pd.read_csv("earnings.csv")
@@ -64,14 +67,17 @@ df['rolling_avg'] = df['revenue'].rolling(3).mean()
 
 print(df.tail())
 </code></pre>
-          <aside class="notes">Mention how rolling averages help predict future revenue trends.</aside>
+
+          <aside class="notes">Explain forecasting logic.</aside>
         </section>
 
       </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- RevealJS Core -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+    <!-- Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
@@ -80,6 +86,9 @@ print(df.tail())
     <script>
       Reveal.initialize({
         plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes],
+        highlight: {
+          beforeHighlight: hljs => hljs.configure({languages: ['python']})
+        }
       });
     </script>
   </body>
