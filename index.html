@@ -16,23 +16,25 @@
 
         <!-- Slide 1 -->
         <section>
-          <h1>Quarterly Earnings Report</h1>
+          <h1>QUARTERLY<br>EARNINGS REPORT</h1>
           <p>Prepared by: <b>24ds2000104@ds.study.iitm.ac.in</b></p>
-          <aside class="notes">Start by introducing yourself.</aside>
+          <aside class="notes">Introduce yourself and the purpose of this presentation.</aside>
         </section>
 
-        <!-- Markdown Slide -->
+        <!-- Markdown Slide (EMAIL ADDED HERE ALSO) -->
         <section data-markdown>
           <textarea data-template>
-## 📊 Financial Summary (Markdown)
+## 📊 Financial Summary (Markdown Slide)
 
 - Revenue Growth: **+12%**
 - Net Profit: **₹48 Crores**
 - EPS: `₹23.4`
 
+**Email:** 24ds2000104@ds.study.iitm.ac.in
+
 ---
 
-### Key Formula (Math)
+### Financial Formula (Math)
 
 \[
 EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Avg\ Shares}
@@ -40,20 +42,20 @@ EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Avg\ Shares}
           </textarea>
         </section>
 
-        <!-- Fragments -->
+        <!-- Fragment Animation -->
         <section>
-          <h2>Highlights</h2>
+          <h2>Quarterly Highlights</h2>
           <ul>
-            <li class="fragment">Increased digital transactions</li>
-            <li class="fragment fade-up">Reduced operational cost</li>
-            <li class="fragment fade-in-then-out">Quarterly growth momentum</li>
+            <li class="fragment">Increase in digital transactions</li>
+            <li class="fragment fade-up">Lower operational costs</li>
+            <li class="fragment fade-in-then-out">Consistent customer growth</li>
           </ul>
-          <aside class="notes">Explain each point slowly.</aside>
+          <aside class="notes">Explain each point gradually as it appears.</aside>
         </section>
 
-        <!-- Code with Highlight -->
+        <!-- Code Example -->
         <section>
-          <h3>Forecast Code Example</h3>
+          <h3>Revenue Forecast Code Example</h3>
 <pre><code class="python" data-line-numbers>
 import pandas as pd
 
@@ -62,7 +64,7 @@ df['rolling_avg'] = df['revenue'].rolling(3).mean()
 
 print(df.tail())
 </code></pre>
-          <aside class="notes">Show code relevance to forecasting.</aside>
+          <aside class="notes">Mention how rolling averages help predict future revenue trends.</aside>
         </section>
 
       </div>
@@ -77,7 +79,7 @@ print(df.tail())
 
     <script>
       Reveal.initialize({
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes],
       });
     </script>
   </body>
